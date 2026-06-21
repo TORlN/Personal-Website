@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Torin Nelson</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <header>
+      <h1>Torin Nelson</h1>
+      <nav>
+        <button class="tab active" data-target="about">About</button>
+        <button class="tab" data-target="professional">Professional</button>
+        <button class="tab" data-target="personal">Personal</button>
+        <button class="tab" data-target="resume">Resume</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <section id="about" class="panel active">
+        <h2>About Me</h2>
+        <div class="about-inner">
+          <img src="Torin Nelson Photo.jpg" alt="Torin Nelson" class="about-photo" />
+          <p>
+            Hi, I’m Torin. I’m a computer science graduate student specializing in machine learning and intelligent
+            systems. I build high-performance desktop utilities, software tools, libraries, and ML models.
+            My current focus is on video processing and optimization pipeline projects.
+            When I’m not programming, you can usually find me on the mats training BJJ or playing video
+            games.
+          </p>
+        </div>
+      </section>
+
+      <!-- Professional Projects -->
+      <section id="professional" class="panel">
+        <h2>Professional Projects</h2>
+        <div class="project-grid">
+          <div class="card">
+            <div class="card-header">
+              <h3>HDR to SDR</h3>
+              <a href="https://hdrtosdr.com" target="_blank" rel="noopener noreferrer" class="btn">Visit Site &rarr;</a>
+            </div>
+            <p>A tool for converting HDR video content to SDR, making high-dynamic-range footage compatible with
+              standard displays.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume -->
+      <section id="resume" class="panel">
+        <h2>Resume</h2>
+        <div class="resume-container">
+          <a href="Torin Nelson Resume 2026.pdf" target="_blank" rel="noopener noreferrer" class="btn resume-btn">Download PDF &rarr;</a>
+          <iframe src="Torin Nelson Resume 2026.pdf#toolbar=0&navpanes=0&scrollbar=0" class="resume-embed" title="Torin Nelson Resume"></iframe>
+        </div>
+      </section>
+
+      <!-- Personal Projects -->
+      <section id="personal" class="panel">
+        <h2>Personal Projects</h2>
+        <div class="project-grid">
+          <div class="card placeholder">
+            <h3>Coming Soon</h3>
+            <p>Personal projects will be listed here.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Torin Nelson</p>
+    </footer>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
