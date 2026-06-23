@@ -43,11 +43,40 @@
           <div class="card">
             <div class="card-header">
               <h3>HDR to SDR</h3>
-              <a href="https://www.hdrtosdr.com" target="_blank" rel="noopener noreferrer" class="btn">Visit Site
+              <a href="https://hdrtosdr.com" target="_blank" rel="noopener noreferrer" class="btn">Visit Site
                 &rarr;</a>
             </div>
             <p>A tool for converting HDR video content to SDR, making high-dynamic-range footage compatible with
               standard displays.</p>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>AI Code Bot</h3>
+              <a href="https://github.com/TechNickAI/AICodeBot" target="_blank" rel="noopener noreferrer" class="btn">GitHub &rarr;</a>
+            </div>
+            <p>Open-source AI coding assistant. Contributed as a software engineer by integrating Ollama as a model
+              provider, enabling offline coding assistance with any locally hosted LLM (Llama 3, Mistral, etc.).
+              Abstracted the model interface for dynamic configuration and expanded the test suite to validate Ollama
+              API responses.</p>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>Sankaku Analytics <span class="closed-source-tag">Closed Source</span></h3>
+            </div>
+            <p>ML-powered retail analytics platform for CPG companies. Ingests point-of-sale data from Nielsen, SPINS,
+              IRI, and Whole Foods, then clusters SKU portfolios via K-Means, visualizes commercial DNA through radar
+              and PCA charts, and surfaces prescriptive trade-spend and distribution recommendations through a
+              rules-based strategy engine.</p>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>NASA L'SPACE PDR</h3>
+              <a href="Team%2026%20-%20Preliminary%20Design%20Review%20(PDR).pdf" download class="btn">Download PDF
+                &rarr;</a>
+            </div>
+            <p>250-page Preliminary Design Review delivered to NASA as part of the L'SPACE Mission Concept Academy.
+              Covers mission architecture, CDH subsystem design, trade studies, and a revised scope under a simulated
+              22% budget cut. Co-led as Deputy Project Manager and CDH Systems Lead.</p>
           </div>
         </div>
       </section>
@@ -204,10 +233,69 @@
       <!-- Personal Projects -->
       <section id="personal" class="panel">
         <h2>Personal Projects</h2>
+        <p class="project-group-label">Open Source</p>
         <div class="project-grid">
-          <div class="card placeholder">
-            <h3>Coming Soon</h3>
-            <p>Personal projects will be listed here.</p>
+          <div class="card">
+            <div class="card-header">
+              <h3>OpenTurbo</h3>
+              <a href="https://github.com/TORlN/OpenTurbo" target="_blank" rel="noopener noreferrer" class="btn">GitHub
+                &rarr;</a>
+            </div>
+            <p>Experimental CUDA prototype for 3-bit KV-cache compression in LLM inference. Implements a
+              TurboQuant-style FWHT encoder with QJL residual sign correction, GQA-aware scoring, and a downstream
+              bridge targeting llama.cpp integration.</p>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>ShrinkWrap</h3>
+              <a href="https://github.com/TORlN/shrinkwrap" target="_blank" rel="noopener noreferrer" class="btn">GitHub
+                &rarr;</a>
+            </div>
+            <p>CLI tool that compresses AI agent instruction files (CLAUDE.md, .cursorrules, system prompts) into a
+              token-optimized format. Keeps security rules and architecture constraints byte-identical via SHA-256
+              checksums while aggressively deduplicating volatile status and todo sections.</p>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>Quantitative Analysis Betting Bot</h3>
+              <a href="https://github.com/Torin-Projects/betting-bot" target="_blank" rel="noopener noreferrer"
+                class="btn">GitHub &rarr;</a>
+            </div>
+            <p>24/7 automated trading bot for the Polymarket prediction platform. Implements a Smart Copy system that
+              analyzes historical trader performance and filters luck-based variance to identify consistently profitable
+              whales. Built on a multithreaded polling architecture with slippage calculation and consensus weighting.
+              Simulated trades only; real execution is not implemented. Project is deprecated.</p>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>Heart Disease Prediction</h3>
+              <a href="https://github.com/TORlN/ML-Final-Project" target="_blank" rel="noopener noreferrer"
+                class="btn">GitHub &rarr;</a>
+            </div>
+            <p>Binary classification project predicting heart disease presence from clinical features. Compares
+              Logistic Regression and Random Forest on the Kaggle heart disease dataset, with full EDA, feature
+              importance analysis, and ROC curve evaluation. Random Forest achieved 100% test accuracy on this
+              corpus.</p>
+          </div>
+        </div>
+        <p class="project-group-label">Closed Source</p>
+        <div class="project-grid">
+          <div class="card">
+            <div class="card-header">
+              <h3>Discord YouTube Bot</h3>
+            </div>
+            <p>Self-hosted Discord music bot with YouTube playback, queue management, and playlist support. Uses yt-dlp
+              with browser cookie fallback for age-restricted content and backs off automatically when YouTube
+              rate-limits a session.</p>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>Electricity Access Mapping</h3>
+            </div>
+            <p>Attention UNet trained on IEEE GRSS 2021 satellite imagery to identify underserved settlements in
+              Sub-Saharan Africa lacking electricity access. Achieved 75% accuracy with GradCAM-based explainability.
+              Received the Future Prospects and Recognition Award for adapting a medical imaging architecture to
+              satellite data.</p>
           </div>
         </div>
       </section>

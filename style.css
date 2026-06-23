@@ -91,6 +91,13 @@ nav {
 
 .panel.active {
   display: block;
+  flex: 1;
+}
+
+#about.panel.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @keyframes fadein {
@@ -107,6 +114,8 @@ nav {
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 section h2 {
@@ -316,6 +325,35 @@ section>p {
     align-items: center;
     text-align: center;
   }
+}
+
+/* Project group labels */
+.project-group-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-grid + .project-group-label {
+  margin-top: 1.75rem;
+}
+
+/* Closed source tag */
+.closed-source-tag {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 /* Footer */
